@@ -13,7 +13,7 @@ def User_is_on_Dietician_website(context):
     # context.webdriver = context.webdriver.Chrome(ChromeDriverManager().install())
     #context.webdriver = context.webdriver.Chrome(service=Service(ChromeDriverManager
                                                                  #(chrome_type=ChromeType.BRAVE).install()))
-    context.driver.get("https://www.google.com/")
+    context.driver.get("Url of the Dietician Website")
 
 
 @when('User clicks Register link')
