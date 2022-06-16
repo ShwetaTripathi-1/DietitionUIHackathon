@@ -1,16 +1,18 @@
 # DietitianUIHackathon
 DietitianUIHackathon
 
-1. Launch virtual environment \
+1. Save Chromedriver at Python\Scripts folder\
+~\Python\Scripts 
+2. Launch virtual environment \
     virtualenv venv
-2. Activate virtual environment\
+3. Activate virtual environment\
     cd venv/scripts
     activate
-3. Once inside virtual environment install dependencies\
+4. Once inside virtual environment install dependencies\
     pip install -r requirements.txt
 
-4.  Command to run allure report files\
+5. Command to run allure report files\
     behave -f allure_behave.formatter:AllureFormatter -o reports/features
 
-5. Command to generate allure report in HTML\
+6. Command to generate allure report in HTML\
     allure serve reports/features  
