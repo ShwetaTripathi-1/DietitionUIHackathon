@@ -1,19 +1,10 @@
 from behave import *
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import ChromeType
 
-#test comment
 
 @given('User is on Dietician website')
 def User_is_on_Dietician_website(context):
-    context.driver = webdriver.Chrome(
-        executable_path="C:\\Users\\HP\\PycharmProjects\\DieticianUIHackathon\\Drivers\\chromedriver.exe")
-    #context.driver.get("https://dsportalapp.herokuapp.com/home ")
-    # context.webdriver = context.webdriver.Chrome(ChromeDriverManager().install())
-    #context.webdriver = context.webdriver.Chrome(service=Service(ChromeDriverManager
-                                                                 #(chrome_type=ChromeType.BRAVE).install()))
+    context.driver = webdriver.Chrome()
     context.driver.get("Url of the Dietician Website")
 
 
